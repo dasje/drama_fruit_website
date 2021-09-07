@@ -1,0 +1,30 @@
+.ppContainer {
+    width: 60%;
+    margin: 40px auto;
+    border: 3px dashed var(--drama-green);
+    padding: 0 20px 20px 20px;
+    background-color: rgba(255, 255, 255, .9);
+}
+
+.ppContainer a {
+    color: var(--drama-pink);
+    transition: .4s;
+}
+
+@media (hover:hover) {
+    .ppContainer a:hover {
+        color: var(--drama-green);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .ppContainer {
+        width: 80%;
+    }
+} 
+
+@media only screen and (max-width: 600px) {
+    .ppContainer {
+        width: 90%;
+    }
+}  

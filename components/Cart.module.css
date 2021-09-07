@@ -1,0 +1,149 @@
+.cartOverlay {
+    height: 50%;
+    position: relative;
+    width: 50%;
+    text-align: center;
+}
+
+.icon {
+    cursor: pointer;
+    position: absolute;
+    top: 10%;
+    right: 0;
+}
+
+.itemNo {
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    font-size: 11px;
+}
+
+.exitCross {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+}
+
+@media (hover:hover) {
+    .exitCross:hover {
+        color: var(--drama-green);
+    }
+}
+
+.basket {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    width: 260px;
+    background-color: #fffffff8;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    max-height: 100vh;
+}
+
+.basketItem {
+    width: 80%;
+}
+
+.item {
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px dashed black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+}
+
+.basketItemText {
+    margin: 0 0 0 10px;
+    font-size: 14px;
+}
+
+.basketTotal {
+    width: 100%;
+    text-align: center;
+}
+
+.itemCross {
+    position: absolute;
+    top: 2px;
+    right: 4px;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+@media (hover:hover) {
+    .itemCross:hover {
+        color: var(--drama-green);
+    }
+}
+
+.incrementContain {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.incrementButton {
+    cursor: pointer;
+}
+
+@media (hover:hover) {
+    .incrementButton:hover {
+        color: var(--drama-green);
+    }
+}
+
+.checkContain {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.checkout {
+    width: 100%;
+    margin: 20px auto;
+    border: none;
+    background-color: var(--drama-green);
+    color: var(--drama-yellow); 
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: .4s;
+}
+
+@media (hover:hover) {
+    .checkout:hover {
+        background-color: var(--drama-yellow);
+        color: var(--drama-pink);
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    .checkContain {
+        margin-bottom: 80px;
+    }
+}

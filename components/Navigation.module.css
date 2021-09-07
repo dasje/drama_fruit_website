@@ -1,0 +1,99 @@
+.logoTitleIcons {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerTitle {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerLogo {
+    margin: 0 10px;
+    padding: 10px;
+    width: 310px;
+}
+
+.iconsContainer {
+    width: 15%;
+    height: 100px;
+    max-width: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartOverlay {
+    height: 50%;
+    position: relative;
+    width: 50%;
+    text-align: center;
+}
+
+.desktopNav {
+    width: 100%;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 5px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: 'sejagad';
+    font-size: 26px;
+}
+
+.desktopNav > ul > li > a:focus {
+    color: var(--drama-pink);
+}
+
+.navHR {
+    width: 90%;
+    border: none;
+    height: 2px;
+    background-color: black;
+}
+
+.desktopNav > a {
+    text-decoration: none;
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .headerTitle > h1 {
+        font-size: 20px;
+    }
+    .iconsContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .desktopNav {
+        font-size: 16px;
+    }
+    .bannerLogo {
+        width: 255px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .headerTitle > h1 {
+        font-size: 20px;
+    }
+    .iconsContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .desktopNav {
+        font-size: 12px;
+    }
+}

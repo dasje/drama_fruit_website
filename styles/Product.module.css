@@ -1,0 +1,147 @@
+.productContain {
+    width: 90%;
+    margin: 0 auto 40px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.imageContain {
+    width: 50%;
+}
+
+.image {
+    width: 35vw;
+    max-width: 500px;
+    height: 35vw;
+    max-height: 500px;
+}
+
+.altContainer {
+    width: 36vw;
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.altImages {
+    width: 18%;
+    margin: 0 1%;
+    cursor: pointer;
+    transition: .2s;
+}
+
+@media (hover:hover) {
+    .altImage:hover {
+        border-color: var(--drama-green);
+    }
+}
+
+.altImage {
+    width: 100%;
+    border: 3px solid var(--drama-pink);
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.textContain {
+    border-top: 3px dashed var(--drama-green);
+    padding: 20px 0;
+    width: 70%;
+}
+
+.productPrice {
+    margin-bottom: 20px;
+}
+
+.increment {
+    width: 70%;
+    max-width: 120px;
+    margin: 10px 0 20px;
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+}
+
+.incrementButton {
+    width: 30%;
+    text-align: left;
+    cursor: pointer;
+    transition: .4s;
+    font-size: 20px;
+}
+
+@media (hover:hover) {
+    .incrementButton:hover {
+        color: var(--drama-green);
+    }
+}
+
+.sizesContainer {
+    border: 2px dotted var(--drama-green);
+    padding: 10px;
+    margin: 0 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.size {
+    padding: 10px 15px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: .4s;
+    box-sizing: border-box;
+    min-width: 50px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+@media (hover:hover) {
+    .size:hover {
+        background-color: rgba(200, 200, 200);
+    }
+}
+
+.checkoutButton {
+    margin: 20px 0;
+    color: var(--drama-green);
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+@media (hover:hover) {
+    .checkoutButton:hover {
+        color: var(--drama-yellow);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .productContain {
+        flex-direction: column;
+    }
+    .imageContain, .description {
+        width: 96%;
+        margin: 0 auto 20px auto;
+    }
+    .image {
+        width: 80vw;
+        height: 80vw;
+    }
+    .altContainer {
+        width: 80vw;
+    }
+    .textContain {
+        width: 100%;
+    }
+}  
